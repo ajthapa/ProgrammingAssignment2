@@ -8,14 +8,14 @@
 ### getinverse()    : gets the value of  the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-  inv <- NULL
+  i <- NULL
   set <- function(y) {
     x <<- y
     i <<- NULL
   }
   get <- function() x
   setinverse <- function(inv) i <<- inv
-  getinverse <- function() inv
+  getinverse <- function() i
   list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse)
